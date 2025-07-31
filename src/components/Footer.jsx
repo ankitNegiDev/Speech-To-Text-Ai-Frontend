@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 
 function Footer() {
     return (
-        <footer className="w-full fixed bottom-0 left-0 z-50 bg-[#0f0f0f] text-gray-300 px-4 sm:px-6 lg:px-8 py-4 border-t border-gray-800 ">
+        <footer className="w-full lg:fixed bottom-0 left-0 z-50 bg-[#0f0f0f] text-gray-300 px-4 sm:px-6 lg:px-8 py-4 border-t border-gray-800 ">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-y-4 md:gap-y-0">
 
                 {/* Left: Copyright */}

@@ -107,7 +107,7 @@ function Hero() {
             </div>
 
             {/* Footer */}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
