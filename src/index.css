@@ -28,3 +28,28 @@ body {
 .animate-marquee {
     animation: marquee 30s linear infinite;
 }
+
+@keyframes shimmer-black {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.shimmer-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    height: 100%;
+    width: 150%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 0, 0, 0.1),
+        transparent
+    );
+    animation: shimmer-black 1.8s infinite;
+}
