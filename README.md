@@ -44,41 +44,77 @@ An intuitive web app to record or upload audio, convert it to text using AI, and
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
-```plane text
-src/
-├── assets/         # Static assets
-├── components/     # Reusable UI components
-├── pages/          # Page-level views
-├── services/       # API utilities
-└── App.jsx         # Route handler
-```
+```plain text
+
+├── public/                      # Publicly accessible assets
+│   └── assets/                  # Static files used at runtime (images, audio)
+│       ├── gradientBackground.png
+│       ├── sample1.wav
+│       └── sample.mp3
+│
+├── src/                         # Source code
+│   ├── assets/                  # Internal image assets (icons, logos, etc.)
+│   ├── components/              # Reusable UI components
+│   │   ├── CompanyMarquee.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Layout.jsx
+│   │   ├── Navbar.jsx
+│   │   └── transcribe/          # Transcription-related UI components
+│   │       ├── DeleteTranscription.jsx
+│   │       ├── EditTranscription.jsx
+│   │       ├── RecordAudio.jsx
+│   │       ├── TranscriptionViewer.jsx
+│   │       └── UploadAudio.jsx
+│   │
+│   ├── pages/                   # Page-level components (routed via React Router)
+│   │   ├── Dashboard.jsx
+│   │   ├── History.jsx
+│   │   ├── Home.jsx
+│   │   └── Transcribe.jsx
+│   │
+│   ├── App.jsx                  # App root
+│   ├── main.jsx                 # Entry point
+│   └── index.css                # Global styles
+│
+├── .env                         # Environment variables
+├── .gitignore                   # Git ignore rules
+├── index.html                   # Root HTML file
+├── package.json                 # NPM dependencies and scripts
+├── postcss.config.js            # PostCSS config
+├── projectThinking.md           # Planning, notes, or brainstorming doc
+├── README.md                    # Project documentation
+├── tailwind.config.js           # Tailwind CSS config
+├── vite.config.js               # Vite build config
+````
 
 ---
 
-## ⚙️ Setup
+## ⚙️ Project Setup
 
-```bash
-git clone https://github.com/your-username/speech-to-text-ai-frontend.git
-cd speech-to-text-ai-frontend
-npm install
-npm run dev
-```
+- clone the repository
 
-> Make sure your \`.env\` points to the correct backend API URL.
+    ```bash
+    git clone https://github.com/ankitNegiDev/Speech-To-Text-Ai-Frontend
+    ```
 
----
+- Install dependencies
 
-## 🌐 Environment Variables
+    ```bash
+    npm install
+    ```
 
-Create a \`.env\` file with:
 
-```bash
-VITE_API_BASE_URL=https://your-backend-url.com/api
-```
+- Start the development server**  
 
-and also add clerk VITE_CLERK_PUBLISHABLE_KEY if you are using clerk production instance then add production api keys.
+    ```bash
+    npm run dev
+    ```
+
+**View in browser**  
+Visit `http://localhost:5173` or the port your dev server shows.
 
 ---
 
@@ -94,6 +130,7 @@ and also add clerk VITE_CLERK_PUBLISHABLE_KEY if you are using clerk production 
 - **Searchable History & Filtering**  
   - I'm planning to enhance the history page with search and filter options so users can easily locate specific transcriptions. and also get the specific transcription edited history based on title of the transcriptions or tags.
 
+---
 
 ## 📄 License
 
