@@ -11,13 +11,13 @@ An intuitive web app to record or upload audio, convert it to text using AI, and
 
 <!-- Replace with actual file paths or URLs -->
 ![Home Page](./public/assets/site1.png)
-![loged in page](./public/site4.png)
-![Home Page with loged in user](./public/site0.png)
-![Transcription Page](./public/site2.png)
-![transcribe page generating transcription](./public/site3.png)
-![transcribe page with transcription](./public/site5.png)
-![transcribe page with edit transcription](./public/site6.png)
-![transcribe page with transcribption hisotry](./public/site7.png)
+![loged in page](./public/assets/site4.png)
+![Home Page with loged in user](./public/assets/site0.png)
+![Transcription Page](./public/assets/site2.png)
+![transcribe page generating transcription](./public/assets/site3.png)
+![transcribe page with transcription](./public/assets/site5.png)
+![transcribe page with edit transcription](./public/assets/site6.png)
+![transcribe page with transcribption hisotry](./public/assets/site7.png)
 
 ---
 
